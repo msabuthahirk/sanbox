@@ -16,21 +16,12 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="container-fluid finishing-signup">
+  <div class="container-fluid get-otp">
     <div class="row justify-content-center align-items-center vh-100">
       <div class="col-md-12 text-center">
-        <h2 class="sub-heading">Finish Signining up</h2>
-        <h2 class="sub-txt">Congratulations! You're just one step away from unlocking the full potential !</h2>
-        
+        <img src="assets/logo/sandbox-logo-B.png" alt="Logo" class="logo-img img-fluid">        
 
         <div class="form-container d-flex justify-content-center flex-column align-items-center">
-
-          <label for="phone-number-input" class="input-label text-start">Full Name</label>
-          <input type="text" id="phone-number-input" class="form-control" placeholder="Enter Your Name">
-
-          <label for="phone-number-input" class="input-label text-start">Email</label>
-          <input type="text" id="phone-number-input" class="form-control" placeholder="your@gmail.com">
-
 
           <label for="phone-input">Phone Number</label>
           <div class="input-group">
@@ -44,9 +35,19 @@
               </ul>
             </div>
             <input type="text" class="form-control" id="phone-input" placeholder="Mobile">
+            <div id="get-otp-btn" class="btn-get-otp" resend-state="0">Get OTP</div>
           </div>
 
-          <button class="btn btn-black btn-block">Continue</button>
+          <div class="otp-input-container mt-4">
+            <input type="text" id="digit1" class="digit-input" maxlength="1" />
+            <input type="text" id="digit2" class="digit-input" maxlength="1" />
+            <input type="text" id="digit3" class="digit-input" maxlength="1" />
+            <input type="text" id="digit4" class="digit-input" maxlength="1" />
+            <input type="text" id="digit5" class="digit-input" maxlength="1" />
+            <input type="text" id="digit6" class="digit-input" maxlength="1" />
+          </div>
+
+          <button class="btn btn-black btn-block" id="otp-submit-btn" disabled>Submit</button>
           
         </div>
         
@@ -63,7 +64,7 @@
   <script src="css/vendors/jquery/jquery-3.6.0.min.js" ></script>
   <!-- Link to custom JS -->
   <script src="js/script.js"></script>
-  <script src="js/finishing-signup.js"></script>
+  <script src="js/get-otp.js"></script>
   
 </body>
 </html>

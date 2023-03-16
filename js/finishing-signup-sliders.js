@@ -34,11 +34,15 @@ function currentSlide(n) {
 
 // Add event listener for next button click
 document.querySelector(".next-button").addEventListener("click", function() {
-  plusSlides(1);
+  if (slideIndex < 3) {
+    plusSlides(1);
+  } else {
+    window.location.href = "https://codelocus.in/";
+  }
 });
 
 // Add event listener for skip button click
 document.querySelector(".skip-button").addEventListener("click", function() {
   // Redirect to another page
-  window.location.href = "https://example.com";
+  window.location.href = "https://codelocus.in/";
 });

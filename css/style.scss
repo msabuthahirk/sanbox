@@ -275,7 +275,7 @@ body {
   }
   
   .dot.active {
-    width: 25px;
+    width: 35px;
     border-radius: 4px;
     background-color: #FBCE00;
   }
@@ -288,7 +288,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(yellow, 0.3);
+    // background-color: rgba(yellow, 0.3);
     height: 80px;
     padding-left: 30px;
     padding-right: 30px;
@@ -326,4 +326,170 @@ body {
   }
   
   
+}
+
+.get-otp {
+
+  /* Logo styles */
+  .logo-img {
+    width: 400px;
+    height: auto;
+    max-width: 70%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 80px;
+  }
+
+  .form-container {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+
+    padding: 0px 15px;
+    box-sizing: border-box;
+
+    .form-control:focus {
+      box-shadow: none;
+      outline: none;
+    }
+
+    /* Center align the form group */
+    .form-group {
+      // background-color: red;
+    }
+    
+    label {
+      width: 100%;
+      color: rgba(#212529, 0.8);
+      font-size: 16.5px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      text-align: left;
+      
+    }
+
+    input {
+      margin-bottom: 20px;
+      background-color: rgba(#F7F7F7, 1);
+      border: 0px solid transparent;
+      padding: 13px 20px;
+      border-radius: 7px;
+      outline: none;
+      
+
+      &::placeholder {
+        color: rgba(#000000, 0.35);
+        font-weight: 500;
+      }
+
+      &:focus {
+        outline: none;
+      }
+      
+    }
+
+    /* Make the input group full width */
+    .input-group {
+      width: 100%;
+      // background-color: cyan;
+      height: fit-content;
+
+      input {
+        margin-bottom: 0px;
+      }
+
+      button {
+        height: 100%;
+        background-color: rgba(#F7F7F7, 1);
+        border: 0px solid transparent;
+        color: rgba(#212529, 0.8);
+      }
+      
+      
+    }
+
+    /* Style the country code dropdown button */
+    .dropdown-toggle {
+      text-align: left;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    .dropdown-toggle:focus {
+      box-shadow: none;
+      outline: none;
+    }    
+
+    /* Style the country code dropdown menu */
+    .dropdown-menu {
+      max-height: 200px;
+      overflow-y: auto;
+    }
+
+    /* Style the flag icon */
+    .flag-icon {
+      margin-right: 5px;
+      font-size: 1.5rem;
+    }
+
+    .btn-black {
+      background-color: #222222;
+      width: 100%;
+      color: #fff;
+      border-radius: 7px;
+      border: 0;
+      font-size: 16px;
+      font-weight: 600;
+      padding: 13px 20px;
+      margin-top: 25px;
+      outline: none;
+
+    }
+
+    .btn-black:focus {
+      outline: none;
+      box-shadow: none;
+    }
+
+    .btn-get-otp {
+      background-color: #222222;
+      color: #FFFFFF;
+      border-radius: 10px !important;
+      padding: 10px 15px;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 2;
+      cursor: pointer;
+      transition: background-color 0.3s ease-out;
+    }
+    
+    .btn-get-otp.clicked {
+      background-color: #444444;
+    }
+    
+
+    .otp-input-container {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .digit-input {
+      width: 45px;
+      height: 50px;
+      font-size: 15px;
+      text-align: center;
+      border: 0px none;
+      border-radius: 5px;
+      outline: none;
+
+      padding: 10px;
+      box-sizing: border-box;
+    }    
+    
+
+  }
+
 }

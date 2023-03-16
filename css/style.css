@@ -303,7 +303,7 @@ body {
 }
 
 .finishing-signup-sliders .dot.active {
-  width: 25px;
+  width: 35px;
   border-radius: 4px;
   background-color: #FBCE00;
 }
@@ -322,7 +322,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: rgba(255, 255, 0, 0.3);
   height: 80px;
   padding-left: 30px;
   padding-right: 30px;
@@ -358,5 +357,188 @@ body {
 
 .finishing-signup-sliders .next-icon i {
   font-size: 25px;
+}
+
+.get-otp {
+  /* Logo styles */
+}
+
+.get-otp .logo-img {
+  width: 400px;
+  height: auto;
+  max-width: 70%;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+.get-otp .form-container {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  padding: 0px 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* Center align the form group */
+  /* Make the input group full width */
+  /* Style the country code dropdown button */
+  /* Style the country code dropdown menu */
+  /* Style the flag icon */
+}
+
+.get-otp .form-container .form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+}
+
+.get-otp .form-container label {
+  width: 100%;
+  color: rgba(33, 37, 41, 0.8);
+  font-size: 16.5px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.get-otp .form-container input {
+  margin-bottom: 20px;
+  background-color: #f7f7f7;
+  border: 0px solid transparent;
+  padding: 13px 20px;
+  border-radius: 7px;
+  outline: none;
+}
+
+.get-otp .form-container input::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.35);
+  font-weight: 500;
+}
+
+.get-otp .form-container input:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.35);
+  font-weight: 500;
+}
+
+.get-otp .form-container input::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.35);
+  font-weight: 500;
+}
+
+.get-otp .form-container input::placeholder {
+  color: rgba(0, 0, 0, 0.35);
+  font-weight: 500;
+}
+
+.get-otp .form-container input:focus {
+  outline: none;
+}
+
+.get-otp .form-container .input-group {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.get-otp .form-container .input-group input {
+  margin-bottom: 0px;
+}
+
+.get-otp .form-container .input-group button {
+  height: 100%;
+  background-color: #f7f7f7;
+  border: 0px solid transparent;
+  color: rgba(33, 37, 41, 0.8);
+}
+
+.get-otp .form-container .dropdown-toggle {
+  text-align: left;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.get-otp .form-container .dropdown-toggle:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+}
+
+.get-otp .form-container .dropdown-menu {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.get-otp .form-container .flag-icon {
+  margin-right: 5px;
+  font-size: 1.5rem;
+}
+
+.get-otp .form-container .btn-black {
+  background-color: #222222;
+  width: 100%;
+  color: #fff;
+  border-radius: 7px;
+  border: 0;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 13px 20px;
+  margin-top: 25px;
+  outline: none;
+}
+
+.get-otp .form-container .btn-black:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.get-otp .form-container .btn-get-otp {
+  background-color: #222222;
+  color: #FFFFFF;
+  border-radius: 10px !important;
+  padding: 10px 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 2;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
+}
+
+.get-otp .form-container .btn-get-otp.clicked {
+  background-color: #444444;
+}
+
+.get-otp .form-container .otp-input-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.get-otp .form-container .digit-input {
+  width: 45px;
+  height: 50px;
+  font-size: 15px;
+  text-align: center;
+  border: 0px none;
+  border-radius: 5px;
+  outline: none;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 /*# sourceMappingURL=style.css.map */
