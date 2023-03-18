@@ -392,6 +392,26 @@ body {
   outline: none;
 }
 
+.get-otp .form-container .label-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.get-otp .form-container .label-container label {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .get-otp .form-container label {
   width: 100%;
   color: rgba(33, 37, 41, 0.8);

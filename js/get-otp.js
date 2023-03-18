@@ -64,21 +64,49 @@ digitInputs.forEach((input, index) => {
 
 const getOtpBtn = document.getElementById('get-otp-btn');
 
-getOtpBtn.addEventListener('click', () => {
-  const resendState = getOtpBtn.getAttribute('resend-state');
-  
-  if (resendState === '0') {
-    getOtpBtn.innerText = 'Resend OTP';
-    getOtpBtn.setAttribute('resend-state', '1');
-  }
-});
-
 
 getOtpBtn.addEventListener('click', () => {
   getOtpBtn.classList.add('clicked');
   setTimeout(() => {
     getOtpBtn.classList.remove('clicked');
   }, 500);
+});
+
+
+const otpCounter = document.getElementById('otp-counter');
+
+
+getOtpBtn.addEventListener('click', function() {
+  let resendState = this.getAttribute('resend-state');
+  console.log(resendState);
+
+  phoneInput = document.getElementById("phone-input");
+  if (phoneInput.value !== "") {
+    if (resendState === "0") {
+      
+      resendState = "1";
+      getOtpBtn.innerText = 'Resend OTP';
+      getOtpBtn.setAttribute('resend-state', resendState);
+  
+      let countDown = 120; // 5 minutes in seconds
+  
+      let countdownInterval = setInterval(function() {
+        if (countDown === 0) {
+          clearInterval(countdownInterval);
+          getOtpBtn.setAttribute('resend-state', "0");
+          otpCounter.innerText = " ";
+        } else {
+          let minutes = Math.floor(countDown / 60);
+          let seconds = countDown % 60;
+          otpCounter.innerText = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+          countDown--;
+        }
+      }, 1000);
+  
+      otpCounter.innerText = "02:00";
+    }
+  }
+  
 });
 
 // const digitInputs = document.querySelectorAll('.digit-input');

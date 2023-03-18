@@ -357,6 +357,19 @@ body {
     .form-group {
       // background-color: red;
     }
+
+    .label-container {
+      width: 100%;
+      // background-color: cyan;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      label {
+        width: fit-content;
+      }
+      
+    }
     
     label {
       width: 100%;
